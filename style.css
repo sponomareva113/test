@@ -1,16 +1,10 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16;
+}
+
 .num{
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-p, ol, ul{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.language{
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 3%;
-    width: 23%;
 }
 
 .numdiv{
@@ -25,7 +19,7 @@ p, ol, ul{
     width: 300px;
     height: 300px;
     padding: 20px;
-    margin-bottom: 10%;
+    margin-bottom: 20px;
     display: block;
     box-sizing: border-box;
 
@@ -33,7 +27,7 @@ p, ol, ul{
 
 .tableone, tr, th, td{
     border: 1px solid black;
-    margin-bottom: 30px; 
+    margin-bottom: 20px; 
     font-size: 17px;
 }
 
@@ -43,14 +37,14 @@ p, ol, ul{
 
 .tablethree{
     border-collapse: collapse;
-    margin: 20px;
-    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
+    width: 400px;
 }
 
 .header {
     font-weight: bold;
-    font-size: 1.15em;
 }
 .tg-text {
     text-align: left;
@@ -63,21 +57,91 @@ p, ol, ul{
 }
 
 .section5 {
-    background-color: rgb(158, 146, 158);
-    width: 800px;
-    padding: auto;
+    background-color: rgb(173, 161, 173);
+    width: 40%;
+    padding: 10px 10px;
 }
 
-.section5 > .paragraph, .div{
-    background-color: rgb(230, 100, 100);
+.paragraph{
+    display: inline-block;
+    background-color: rgb(205, 73, 95);
+    width: 70%;
     height: 50px;
-    width: 600px;
-    margin-left: 20px;
-    margin-top: 30px;
+}
+
+.div{
+    background-color: rgb(205, 73, 95);
+    width: 70%;
+    height: 50px;
 }
 
 .span{
+    display: inline-block;
+    background-color: rgb(205, 73, 95);
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+
+.h3{
+    font-weight: 700;
+    display: inline-block;
+    background-color: rgb(205, 73, 95);
+    width: 70%;
+    height: 50px;
+}
+
+.button{
+    background-color: rgb(205, 73, 95);
+    height: 50px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+.sect{
+    display: flex;
+    width: 320px;
+    justify-content: space-around;
+}
+
+.sect1{
+    background-color: rgb(205, 73, 95);
     height: 50px;
     width: 150px;
-    background-color: rgb(230, 100, 100);
 }
+
+.sect2{
+    background-color: rgb(205, 73, 95);
+    height: 50px;
+    width: 150px;
+}
+
+.parent{
+    display: flex;
+    background-color: pink;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 15px;
+}
+
+.child_1, .child_2, .child_3, .child_4{
+    position: static;
+    display: block;
+    background-color: red;
+    border: 4px solid black;
+    height: 120px;
+    width: 120px;    
+}
+
+/* .child_2{
+    position: relative;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+} */
