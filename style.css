@@ -147,6 +147,8 @@
 } */
 
 .sky{
+    background-image: url(./sky.jpg);
     width: 600px;
     height: 400px;
+    margin-top: 20px;
 }
