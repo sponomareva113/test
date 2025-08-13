@@ -249,7 +249,7 @@
 .block_3{
     gap: 20px;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: end;
 }
 
 .block_4{
