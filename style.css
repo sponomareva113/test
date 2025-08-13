@@ -222,7 +222,6 @@
 .fr{
     background-color: rgb(255, 132, 0);
     height: 40px;
-    border: 2px solid black;
 }
 
 .fr1{
@@ -239,6 +238,21 @@
 
 .fr4{
     width: 80px;
+}
+
+.fr5{
+    height: 100px;
+    width: 35px;
+}
+
+.fr6{
+    height: 120px;
+    width: 50px;
+}
+
+.fr7{
+    height: 70px;
+    width: 50px;
 }
 
 .block_2{
@@ -266,4 +280,94 @@
 .block_6{
     align-items: center;
     justify-content: space-around;
+}
+
+.flex{
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flexb{
+    background-color: purple;
+    width: 250px;
+    height: 200px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.block_7{
+    align-items: start;
+    justify-content: space-between
+}
+
+.block_8{
+    justify-content: space-between;
+    align-items: end;
+}
+
+.block_9{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block_10{
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: stretch;
+    /* box-sizing: border-box;
+    max-height: 200px; */
+}
+
+.block_10 > .fr5{
+    height: stretch;
+}
+
+.block_10 > .fr6{
+    height: stretch;
+}
+
+.block_10 > .fr7{
+    height: stretch;
+}
+
+.block_11{
+    padding-top: 20px;
+    height: 200px;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.text{
+    background-color: rgb(255, 132, 0);
+}
+
+.text1{
+    width: 120px;
+    height: 120px;
+    font-size: 20px;
+}
+
+.text2{
+    width: 110px;
+    height: 50px;
+    font-size: 10px;
+}
+
+.text3{
+    width: 140px;
+    height: 80px;
+    font-size: 25px;
+}
+
+.text4{
+    width: 150px;
+    height: 150px;
+}
+
+.grid-line{
+    display: grid;
+
 }
