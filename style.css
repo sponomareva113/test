@@ -97,6 +97,7 @@
     height: 50px;
     width: 200px;
     margin-bottom: 20px;
+    display: block;
 }
 .sect{
     display: flex;
@@ -368,6 +369,9 @@
 }
 
 .grid-line{
+    background-color: skyblue;
     display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(4, 50px);
 
 }
