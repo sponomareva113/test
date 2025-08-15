@@ -449,3 +449,77 @@
     font-size: 20px;
 }
 
+/* align-items - выравнивает содержимое вдоль оси столбца
+align-content - выранивает сетку вдоль оси колонки
+align-self - выравнивает содержимое элемента вдоль оси столбца
+justify-items - выравнивает содержимое вдоль оси строки
+justify-content - выравнивает сетку вдоль оси строки
+justify-self - выравнивает содержимое элемента вдоль оси строки
+place-items - объединяет в себе свойства align-items и justify-items
+place-content - объединяет в себе свойства align-content и justify-content
+place-self - объединяет в себе свойства align-self и justify-self */
+
+.grid-container{
+    background-color: pink;
+    width: 700px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, fr);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.grid-container > div{
+    background-color: red;
+    border: 4px solid black;
+    height: 130px;
+    width: 130px;  
+}
+
+.grid-container_first{
+    justify-items: center;
+    align-items: center;
+}
+
+.grid-container_second{
+    place-content: center;
+    place-items: center;
+}
+
+.gridchild_5{
+    align-self: center;
+    justify-self: center;
+}
+
+.flex-container{
+    background-color: pink;
+    padding: 10px;
+    width: 500px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.flex-container > div{
+    background-color: red;
+    border: 4px solid black;
+    height: 130px;
+    width: 130px;  
+}
+
+.flex-container_first{
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container_second{
+    justify-content: end;
+    align-items: end;
+}
+
+.flex-container_next > .flexchild_9{
+    margin-top: auto;
+    margin-left: auto;
+}
